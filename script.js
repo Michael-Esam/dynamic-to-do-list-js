@@ -20,5 +20,10 @@ document.addEventListener('DOMContentLoaded',function(){
         taskInput.value = ""
        }    
     }
-    addButton.addEventListener("click", addTask)
+    addButton.addEventListener("click", addTask);
+    taskInput.addEventListener("keypress", function(e){
+        if(e.key=== "Enter"){
+            addTask()
+        }
+    })
 })
