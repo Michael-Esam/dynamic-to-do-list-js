@@ -73,3 +73,4 @@ document.addEventListener('DOMContentLoaded', function () {
         tasks = tasks.filter(task => task !== taskToRemove);
         localStorage.setItem("tasks", JSON.stringify(tasks));
     }
+});
